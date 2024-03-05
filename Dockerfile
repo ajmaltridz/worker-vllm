@@ -11,7 +11,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
     python3 -m pip install --upgrade -r /requirements.txt
 
 # Setup for Option 2: Building the Image with the Model included
-ARG MODEL_NAME=""
+ARG MODEL_NAME="inception-mbzuai/jais-13b-chat"
 ARG TOKENIZER_NAME=""
 ARG BASE_PATH="/runpod-volume"
 ARG QUANTIZATION=""
